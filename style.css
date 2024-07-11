@@ -1,0 +1,163 @@
+* {
+  color: hsl(233, 8%, 79%);
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: Inter-Regular;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  margin: 5rem 10rem 0 10rem;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  gap: 2rem;
+  margin: 3rem 10rem 3rem 10rem;
+}
+
+.container .caixa1 img {
+  width: 100%;
+  height: 300px;
+}
+
+.interno {
+  display: flex;
+  gap: 7rem;
+}
+
+.interno h1 {
+  width: 100%;
+  font-size: 3rem;
+  margin-top: 20px;
+  color: hsl(240, 100%, 5%);
+}
+
+.internoTexto {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  align-content: space-between;
+}
+
+.internoTexto a {
+  width: 40%;
+  height: 20px;
+  text-decoration: none;
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  text-align: center;
+  padding: 10px;
+}
+
+.interno a:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.caixa2 {
+  background-color: hsl(240, 100%, 5%);
+  padding: 2rem;
+}
+
+.caixa2 h3 {
+  color: hsl(36, 100%, 99%);
+  cursor: pointer;
+}
+
+.caixa2 p {
+  color: hsl(236, 13%, 42%);
+}
+
+.caixa2 h1 {
+  color: hsl(35, 77%, 62%);
+}
+
+.caixa2 h3:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 5rem 10rem 3rem 10rem;
+  gap: 4rem;
+}
+
+.fotos img {
+  width: 40%;
+  height: 90%;
+}
+
+.fotos .img1,
+.img2,
+.img3 {
+  display: flex;
+  gap: 1rem
+}
+
+.fotos h4 {
+  color: hsl(240, 100%, 5%);
+}
+
+.fotos h4:hover {
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  * {
+    width: 100%;
+  }
+
+  header {
+    width: max-content;
+    margin: 30px 0px 30px 10px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+  }
+}
